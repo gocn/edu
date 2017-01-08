@@ -1,0 +1,39 @@
+---
+layout: default
+---
+
+<div>
+
+  <p>Pages</p>
+
+  <ul>
+    {% for page in site.pages %}
+      <li>
+        <span>{{ page.date | date: "%b %-d, %Y" }}</span>
+
+        <h2>
+          <a href="{{ page.url | relative_url }}">{{ page.title | escape }}</a>
+        </h2>
+      </li>
+    {% endfor %}
+  </ul>
+
+  <p>Articles</p>
+
+  {{ content }}
+
+  <ul>
+    {% for post in site.posts %}
+      <li>
+        <span>{{ post.date | date: "%b %-d, %Y" }}</span>
+
+        <h2>
+          <a href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
+        </h2>
+      </li>
+    {% endfor %}
+  </ul>
+
+  <p>subscribe <a href="{{ "/feed.xml" | relative_url }}">via RSS</a></p>
+
+</div>

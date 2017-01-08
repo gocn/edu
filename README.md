@@ -1,2 +1,3 @@
-# edu
-GoCN education websites
+# GoCN Education
+
+Powered by Jekyll

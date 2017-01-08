@@ -1,0 +1,24 @@
+# Site settings
+
+title: GoCN Education
+
+description: >
+  TODO: GoCN Education description.
+
+baseurl: ""
+
+url: ""
+
+# Build settings
+
+markdown: kramdown
+
+theme: theme
+
+gems:
+  - jekyll-feed
+
+exclude:
+  - theme/
+  - Gemfile
+  - Gemfile.lock
