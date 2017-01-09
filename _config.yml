@@ -9,6 +9,12 @@ baseurl: ""
 
 url: ""
 
+collections:
+  books:
+    output: true
+    permalink: /books/:path
+
+
 # Build settings
 
 markdown: kramdown
