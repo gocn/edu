@@ -4,36 +4,19 @@ layout: default
 
 <div>
 
-  <p>Pages</p>
+  <p>
+    <a href="{{ "/books" | relative_url }}">书籍</a>
+  </p>
 
-  <ul>
-    {% for page in site.pages %}
-      <li>
-        <span>{{ page.date | date: "%b %-d, %Y" }}</span>
+  <p>
+    <a href="{{ "/articles" | relative_url }}">文章</a>
+  </p>
 
-        <h2>
-          <a href="{{ page.url | relative_url }}">{{ page.title | escape }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
-
-  <p>Articles</p>
-
-  {{ content }}
-
-  <ul>
-    {% for post in site.posts %}
-      <li>
-        <span>{{ post.date | date: "%b %-d, %Y" }}</span>
-
-        <h2>
-          <a href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
-
-  <p>subscribe <a href="{{ "/feed.xml" | relative_url }}">via RSS</a></p>
+  <p>
+    <a href="{{ "/tutorials" | relative_url }}">教程</a>
+    <a href="{{ "/tutorials-fundamental" | relative_url }}">入门教程</a>
+    <a href="{{ "/tutorials-advanced" | relative_url }}">进阶指南</a>
+    <a href="{{ "/tutorials-practice" | relative_url }}">实践参考</a>
+  </p>
 
 </div>

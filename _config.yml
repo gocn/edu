@@ -13,6 +13,9 @@ collections:
   books:
     output: true
     permalink: /books/:path
+  tutorials:
+    output: true
+    permalink: /tutorials/:categories/:path
 
 
 # Build settings
