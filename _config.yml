@@ -29,6 +29,7 @@ gems:
 
 exclude:
   - theme/
+  - vendor/
   - deploy.sh
   - Gemfile
   - Gemfile.lock
