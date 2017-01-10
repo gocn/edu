@@ -2,7 +2,7 @@
 
 ## Prerequisite
 
-- Ruby version: `2.0.0` or above.
+- Ruby version: `2.2.0`
 - Jekyll version: `3.3.1`
 
 ## Usage
