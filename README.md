@@ -2,8 +2,8 @@
 
 ## Prerequisite
 
-Ruby version: `2.0.0` or above.
-Jekyll version: `3.3.1`
+- Ruby version: `2.0.0` or above.
+- Jekyll version: `3.3.1`
 
 ## Usage
 
@@ -18,3 +18,11 @@ jekyll serve
 ```ruby
 jekyll build
 ```
+
+## Collaboration
+
+Travis CI will build `master` branch and run `bash ./deploy.sh`, which would push the build result to `release` branch.
+
+## License
+
+Apache 2.0
