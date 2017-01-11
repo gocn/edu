@@ -1,7 +1,8 @@
 ---
-layout: 	page
-title: 		"书籍"
-permalink: 	/books/
+layout: 	 page
+title: 		 "书籍"
+permalink: /books/
+nav:       "books"
 ---
 
 {% for book in site.books %}

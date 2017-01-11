@@ -1,7 +1,8 @@
 ---
-layout: 	page
-title: 		"教程"
-permalink: 	/tutorials/
+layout: 	 page
+title: 		 "教程"
+permalink: /tutorials/
+nav:       "tutorials"
 ---
 
 {% for tutorial in site.tutorials %}

@@ -17,6 +17,25 @@ collections:
     output: true
     permalink: /tutorials/:categories/:path
 
+navs:
+  - permalink: /home
+    text: 首页
+    slug: home
+  - permalink: /tutorials
+    text: 教程
+    slug: tutorials
+  - permalink: /videos
+    text: 视频
+    slug: videos
+  - permalink: /books
+    text: 书籍
+    slug: books
+  - permalink: /articles
+    text: 文章
+    slug: articles
+  - permalink: /resources
+    text: 资源
+    slug: resources
 
 # Build settings
 

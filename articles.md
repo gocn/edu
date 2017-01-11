@@ -1,7 +1,8 @@
 ---
-layout: 	page
-title: 		"文章"
-permalink: 	/articles/
+layout: 	 page
+title: 		 "文章"
+permalink: /articles/
+nav:       "articles"
 ---
 
 <p>aka. posts</p>
