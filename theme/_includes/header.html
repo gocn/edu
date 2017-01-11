@@ -1,16 +1,18 @@
-<header>
-  <h1>GoCN Education</h1>
-  <nav>
-    <ul>
-    {% for nav in site.navs %}
-      <li>
-      {% if nav.slug == page.nav || nav.slug == layout.nav %}
-        <a href="{{ nav.permalink }}" class="active">{{ nav.text }}</a>
-      {% else %}
-        <a href="{{ nav.permalink }}">{{ nav.text }}</a>
-      {% endif %}
-      </li>
-    {% endfor %}
-    </ul
-  </nav>
+<header class="page-header">
+  <div class="inner-wrapper">
+    <h1>GoCN Education</h1>
+    <nav>
+      <ul>
+      {% for nav in site.navs %}
+        <li>
+        {% if nav.slug == page.nav || nav.slug == layout.nav %}
+          <a href="{{ nav.permalink }}" class="active">{{ nav.text }}</a>
+        {% else %}
+          <a href="{{ nav.permalink }}">{{ nav.text }}</a>
+        {% endif %}
+        </li>
+      {% endfor %}
+      </ul>
+    </nav>
+  </div>
 </header>

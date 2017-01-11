@@ -1,5 +1,85 @@
-$base-font-family: "Helvetica Neue", Helvetica, Arial, sans-serif !default;
+$base: #0b7a5f;
 
-body {
-  font-family: $base-font-family;
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+.page-header {
+  margin: 0;
+  height: 64px;
+  background-color: $base;
+}
+
+.page-header h1 {
+  display: block;
+  width: 156px;
+  height: 64px;
+  background-image: url("/assets/logo-gocn-education.png");
+  background-repeat: no-repeat;
+  background-size: 156px 40px;
+  background-position: 0 12px;
+  text-indent: -2017px;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+.page-header nav {
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+
+.inner-wrapper {
+  width: 84%;
+  margin: 0 auto;
+}
+
+.page-header .inner-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.page-header nav ul {
+  display: flex;
+  justify-content: flex-end;
+  padding: 0;
+  margin: 16px 0;
+  list-style-type: none;
+}
+
+.page-header nav li {
+  line-height: 32px;
+  margin-left: 8px;
+}
+
+.page-header nav li:first-child {
+  margin-left: 0;
+}
+
+.page-header nav a {
+  display: block;
+  color: #fff;
+  text-decoration: none;
+  font-size: 16px;
+  line-height: 32px;
+  font-weight: 600;
+  padding: 0 16px;
+  border-radius: 16px;
+  text-shadow: 0px 0px 1px #888;
+}
+
+.page-header nav a.active {
+  background-color: #4b9a85;
+}
+
+.page-header nav a:hover,
+.page-header nav a:active,
+.page-header nav a.active:hover,
+.page-header nav a.active:active {
+  background-color: #29876f;
 }
