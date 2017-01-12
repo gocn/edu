@@ -1,9 +1,14 @@
+text := $(shell find ./_site/ -name '*.html' -exec cat {} \;)
+rev := $(shell git rev-parse --short HEAD)
+
+test:
+	echo $(rev)
+
 build:
 	bundle exec jekyll build
 	mkdir -p ./_site/assets/fonts
 	mkdir -p ./tmp
-	text=`find ./_site/ -name '*.html' -exec cat {} \;`
-	./node_modules/.bin/fontmin -t "$text" -b ./node_modules/source-han-sans-sc-ttf/dist/* ./tmp/
+	./node_modules/.bin/fontmin -t $(text) -b ./node_modules/source-han-sans-sc-ttf/dist/* ./tmp/
 	cp ./tmp/*.ttf ./_site/assets/fonts/
 	rm -rf ./tmp/
 
@@ -17,7 +22,6 @@ serve:
 
 deploy:
 	set -o errexit -o nounset
-	rev=$(git rev-parse --short HEAD)
 	cd _site
 	ls
 	git init
@@ -28,6 +32,6 @@ deploy:
 	git reset upstream/release
 	touch .
 	git add -A .
-	git commit -m "Auto rebuild at ${rev}"
+	git commit -m "Auto rebuild at $(rev)"
 	git push -q upstream HEAD:release
 
