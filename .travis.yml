@@ -3,8 +3,14 @@ language: ruby
 rvm:
   - 2.2
 
+node_js:
+  - 6
+
+install:
+  - make install
+
 script:
-  - bundle exec jekyll build
+  - make build
 
 after_success:
-  - test $TRAVIS_PULL_REQUEST == "false" && test $TRAVIS_BRANCH == "master" && bash deploy.sh
+  - test $TRAVIS_PULL_REQUEST == "false" && test $TRAVIS_BRANCH == "master" && make deploy

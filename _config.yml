@@ -47,8 +47,10 @@ gems:
   - jekyll-feed
 
 exclude:
+  - node_modules/
   - theme/
   - vendor/
-  - deploy.sh
   - Gemfile
   - Gemfile.lock
+  - Makefile
+  - package.json
