@@ -23,7 +23,7 @@ deploy:
 	git init
 	git config user.name "Ryan Chu"
 	git config user.email "ryaneof@gmail.com"
-	git remote add upstream "https://$GH_TOKEN@github.com/gocn/edu.git"
+	git remote add upstream "https://$(GH_TOKEN)@github.com/gocn/edu.git"
 	git fetch upstream
 	git reset upstream/release
 	touch .
