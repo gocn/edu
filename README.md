@@ -4,24 +4,29 @@
 
 - Ruby version: `2.2.0`
 - Jekyll version: `3.3.1`
+- Node.js version: `4.7.1`
 
 ## Usage
 
+```bash
+make install
+```
+
 ### Development
 
-```ruby
-jekyll serve
+```bash
+make serve
 ```
 
 ### Production
 
-```ruby
-jekyll build
+```bash
+make build
 ```
 
 ## Collaboration
 
-Travis CI will build `master` branch and run `bash ./deploy.sh`, which would push the build result to `release` branch.
+Travis CI will build `master` branch and run `make deploy`, which would push the build result to `release` branch.
 
 ## License
 
