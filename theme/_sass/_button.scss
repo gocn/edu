@@ -8,7 +8,7 @@
   line-height: 16px;
   color: white;
   text-decoration: none;
-  background-color: $base;
+  background-color: transparent;
   transition: all 0.15s linear;
 }
 
@@ -17,7 +17,6 @@
 }
 
 .btn-green {
-  background-color: white;
   color: $base;
   border-color: $base;
 }

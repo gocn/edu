@@ -1,9 +1,8 @@
 ---
 layout:        tutorial
-title:         "Go Level Up"
-description:   ""
+title:         Go Level Up
 category:      advanced
-nav:           "tutorials"
+nav:           tutorials
 ---
 
 TODO: Adavanced 1-1

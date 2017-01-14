@@ -1,9 +1,8 @@
 ---
 layout:        tutorial
-title:         "Go in action"
-description:   ""
+title:         Go in action
 category:      practice
-nav:           "tutorials"
+nav:           tutorials
 ---
 
 TODO: Practice 1-1

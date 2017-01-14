@@ -1,8 +1,8 @@
 ---
 layout: 	 page
-title: 		 "书籍"
+title: 		 书籍
 permalink: /books/
-nav:       "books"
+nav:       books
 ---
 
 {% for book in site.books %}

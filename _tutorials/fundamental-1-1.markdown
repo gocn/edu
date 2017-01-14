@@ -1,9 +1,8 @@
 ---
 layout:        tutorial
-title:         "Go 101"
-description:   ""
+title:         Go 101
 category:      fundamental
-nav:           "tutorials"
+nav:           tutorials
 ---
 
 TODO: Fundamental 1-1

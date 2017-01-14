@@ -1,6 +1,6 @@
 ---
 layout:   page
-nav:      "home"
+nav:      home
 ---
 
 <section class="hero-section">
@@ -28,6 +28,31 @@ nav:      "home"
         <p class="home-books-section-link">
           <a class="btn btn-green" href="{{ "/books" | relative_url }}">查看全部</a>
         </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="home-articles-section">
+  <div class="inner-wrapper">
+    <div class="home-articles-section-content">
+      <div class="home-articles-section-content-text-wrapper">
+        <div class="home-articles-section-content-text">
+          <h2>精选文章</h2>
+          <p class="home-articles-section-subtitle">由 Go 技术社区成员分享，<br />共同贡献、学习、进步。</p>
+          <p class="home-articles-section-link">
+            <a class="btn btn-green" href="{{ "/articles" | relative_url }}">更多文章</a>
+          </p>
+        </div>
+      </div>
+      <div class="home-articles-section-list">
+        <ul>
+        {% for post in site.posts limit:8 %}
+          <li>
+            <a href="{{ post.url }}">{{ post.title }}</a>
+          </li>
+        {% endfor %}
+        </ul>
       </div>
     </div>
   </div>
