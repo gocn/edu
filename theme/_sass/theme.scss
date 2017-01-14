@@ -11,7 +11,7 @@ html, body {
   margin: 0;
   padding: 0;
   border: 0;
-  font-family: -apple-system, "Source Han Sans SC", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Source Han Sans SC", "Helvetica Neue", Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
 }
 
@@ -107,4 +107,19 @@ html, body {
 .page-header nav a.active:hover,
 .page-header nav a.active:active {
   background-color: #29876f;
+}
+
+.page-footer {
+  margin: 0;
+  height: 64px;
+  background-color: #f9f9f9;
+}
+
+.page-footer p {
+  margin: 0;
+  line-height: 64px;
+  height: 64px;
+  font-size: 12px;
+  text-align: center;
+  color: #9B9B9B;
 }

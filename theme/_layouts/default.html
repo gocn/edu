@@ -1,12 +1,9 @@
 <!DOCTYPE html>
 <html lang="{{ page.lang | default: site.lang | default: "zh-CN" }}">
-
 {% include head.html %}
-
-  <body>
-
+<body>
 {% include header.html %}
-
-    {{ content }}
-  </body>
+{{ content }}
+{% include footer.html %}
+</body>
 </html>
