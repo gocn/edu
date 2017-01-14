@@ -1,13 +1,8 @@
-text := $(shell find ./_site/ -name '*.html' -exec cat {} \;)
 rev := $(shell git rev-parse --short HEAD)
 
 build:
 	bundle exec jekyll build
-	mkdir -p ./_site/assets/fonts
-	mkdir -p ./tmp
-	./node_modules/.bin/fontmin -t $(text) -b ./node_modules/source-han-sans-sc-ttf/dist/* ./tmp/
-	cp ./tmp/*.ttf ./_site/assets/fonts/
-	rm -rf ./tmp/
+	bash ./build-font.sh
 
 install:
 	bundle install
