@@ -53,4 +53,8 @@ exclude:
   - Gemfile
   - Gemfile.lock
   - Makefile
+  - build-font.sh
   - package.json
+  - README.md
+  - LICENSE
+
