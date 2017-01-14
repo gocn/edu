@@ -1,9 +1,6 @@
 text := $(shell find ./_site/ -name '*.html' -exec cat {} \;)
 rev := $(shell git rev-parse --short HEAD)
 
-test:
-	echo $(rev)
-
 build:
 	bundle exec jekyll build
 	mkdir -p ./_site/assets/fonts
