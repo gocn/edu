@@ -15,3 +15,13 @@
 .btn:hover {
   background-color: #3f937d;
 }
+
+.btn-green {
+  background-color: white;
+  color: $base;
+  border-color: $base;
+}
+
+.btn-green:hover {
+  background-color: #cce3de;
+}
