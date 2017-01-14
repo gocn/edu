@@ -18,9 +18,6 @@ collections:
     permalink: /tutorials/:categories/:path
 
 navs:
-  - permalink: /
-    text: 首页
-    slug: home
   - permalink: /tutorials
     text: 教程
     slug: tutorials

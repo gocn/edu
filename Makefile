@@ -10,7 +10,6 @@ install:
 
 serve:
 	bundle exec jekyll serve
-	make build
 
 deploy:
 	set -o errexit -o nounset
