@@ -24,3 +24,20 @@
 .btn-green:hover {
   background-color: $green-white;
 }
+
+.btn-has-icon {
+  display: flex;
+  justify-content: center;
+}
+
+.btn-has-icon span {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 16px;
+  display: inline-block;
+  height: 16px;
+}
+
+.btn-has-icon span:first-child {
+  margin-right: 8px;
+}
