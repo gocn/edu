@@ -1,4 +1,8 @@
 $base: #0b7a5f;
+$green-whiter: #f5faf9;
+$green-white: #d7eae5;
+$green-light: #2c9079;
+$green-lighter: #419b85;
 $grey: #4A4A4A;
 
 @import "font";
@@ -99,20 +103,20 @@ html, body {
 }
 
 .page-header nav a.active {
-  background-color: #4b9a85;
+  background-color: $green-lighter;
 }
 
 .page-header nav a:hover,
 .page-header nav a:active,
 .page-header nav a.active:hover,
 .page-header nav a.active:active {
-  background-color: #29876f;
+  background-color: $green-light;
 }
 
 .page-footer {
   margin: 0;
   height: 64px;
-  background-color: #f9f9f9;
+  background-color: #eff4f3;
 }
 
 .page-footer p {
