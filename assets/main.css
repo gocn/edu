@@ -54,11 +54,12 @@
   background-image: url("/assets/hero-section-background.png");
   background-repeat: no-repeat;
   background-size: 329px;
-  background-position: 100% center; }
+  background-position: 160px center; }
 
 .hero-section-content-text {
   position: absolute;
-  top: calc(50% - 136px); }
+  top: calc(50% - 136px);
+  right: 160px; }
 
 .hero-section h2 {
   margin: 0;
