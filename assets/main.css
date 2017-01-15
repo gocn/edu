@@ -32,14 +32,14 @@
   transition: all 0.15s linear; }
 
 .btn:hover {
-  background-color: #3f937d; }
+  background-color: #2c9079; }
 
 .btn-green {
   color: #0b7a5f;
   border-color: #0b7a5f; }
 
 .btn-green:hover {
-  background-color: #cce3de; }
+  background-color: #d7eae5; }
 
 .hero-section {
   position: relative;
@@ -303,18 +303,18 @@ html, body {
   text-shadow: 0px 0px 1px #888; }
 
 .page-header nav a.active {
-  background-color: #4b9a85; }
+  background-color: #419b85; }
 
 .page-header nav a:hover,
 .page-header nav a:active,
 .page-header nav a.active:hover,
 .page-header nav a.active:active {
-  background-color: #29876f; }
+  background-color: #2c9079; }
 
 .page-footer {
   margin: 0;
   height: 64px;
-  background-color: #f9f9f9; }
+  background-color: #eff4f3; }
 
 .page-footer p {
   margin: 0;
