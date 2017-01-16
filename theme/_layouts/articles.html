@@ -11,4 +11,36 @@ layout: default
   </div>
 </header>
 
-{{ content }}
+<section class="page-content page-articles">
+  <div class="inner-wrapper">
+    <section class="articles-left-panel">
+      <ul class="articles-list">
+        {% for post in site.posts %}
+          <li data-post-uri="{{ post.url | relative_url }}">
+            <p class="articles-list-item-title">
+              <a href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
+            </p>
+            <p class="articles-list-item-datetime">
+              <span>{{ post.date | date: "%F %T" }}</span>
+            </p>
+          </li>
+        {% endfor %}
+      </ul>
+    </section>
+  </div>
+</section>
+
+<script type="text/javascript">
+  (function () {
+    var elLists = document.querySelectorAll(".articles-list li");
+    var len = elLists.length;
+
+    for (var i = 0; i < len; i++) {
+      elLists[i].onclick = (function (i) {
+        return function (event) {
+          location.href = this.dataset.postUri;
+        };
+      })(i);
+    }
+  })();
+</script>
