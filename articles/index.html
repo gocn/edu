@@ -66,25 +66,48 @@
   </div>
 </header>
 
-<ul>
-  
-    <li>
-      <span>Jan 14, 2017</span>
-      <h2>
-        <a href="/2017/01/14/hello-world.html">Hello (again).</a>
-      </h2>
-    </li>
-  
-    <li>
-      <span>Jan 8, 2017</span>
-      <h2>
-        <a href="/2017/01/08/hello-world.html">Hello World.</a>
-      </h2>
-    </li>
-  
-</ul>
+<section class="page-content page-articles">
+  <div class="inner-wrapper">
+    <section class="articles-left-panel">
+      <ul class="articles-list">
+        
+          <li data-post-uri="/2017/01/14/hello-world.html">
+            <p class="articles-list-item-title">
+              <a href="/2017/01/14/hello-world.html">Hello (again).</a>
+            </p>
+            <p class="articles-list-item-datetime">
+              <span>2017-01-14 15:14:12</span>
+            </p>
+          </li>
+        
+          <li data-post-uri="/2017/01/08/hello-world.html">
+            <p class="articles-list-item-title">
+              <a href="/2017/01/08/hello-world.html">Hello World.</a>
+            </p>
+            <p class="articles-list-item-datetime">
+              <span>2017-01-08 05:10:12</span>
+            </p>
+          </li>
+        
+      </ul>
+    </section>
+  </div>
+</section>
 
+<script type="text/javascript">
+  (function () {
+    var elLists = document.querySelectorAll(".articles-list li");
+    var len = elLists.length;
 
+    for (var i = 0; i < len; i++) {
+      elLists[i].onclick = (function (i) {
+        return function (event) {
+          location.href = this.dataset.postUri;
+        };
+      })(i);
+    }
+  })();
+</script>
 <footer class="page-footer">
   <div class="inner-wrapper">
     <p>@ <span class="page-footer-year">2017</span> GoCN Education. All Rights Reserved.</p>
